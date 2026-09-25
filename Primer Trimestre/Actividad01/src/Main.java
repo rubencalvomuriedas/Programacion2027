@@ -6,14 +6,14 @@ void main() {
     Ejercicio 1: Escribe un programa que dé los “buenos días”.
      */
 
-    System.out.println("Ejercicio 01");
+    System.out.println("\nEjercicio 01");
     System.out.println("¡Hola buenos dias mundo!");
 
     /*
     Ejercicio 2: Escribe un programa que calcule y muestre el área de un cuadrado de lado igual a 5.
      */
 
-    System.out.println("Ejercicio 02");
+    System.out.println("\nEjercicio 02");
     double lado = 5;
     double area = lado * lado;
     System.out.println("lado: " + lado);
@@ -63,11 +63,7 @@ void main() {
 
     System.out.println("\nEjercicio 05");
     sc = new Scanner(System.in);
-    System.out.println("Introduce la longitud del radio: ");
-
-    System.out.println("\nEjercicio 05");
-    sc = new Scanner(System.in);
-    System.out.println("ingresar el radio");
+    System.out.println("ingresar el radio: ");
     double radio = sc.nextDouble();
 
     double circulo = 2 * Math.PI * radio;
@@ -98,5 +94,84 @@ void main() {
     Ejercicio 7: Escribe un programa que lea un valor correspondiente a una distancia en millas marinas
     y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852 metros.
      */
+
+    System.out.println("\nEjercicio 07");
+    sc = new Scanner(System.in);
+
+    System.out.println("Ingresar millas marinas: ");
+    double millas = sc.nextDouble();
+    System.out.println("millas son: " + millas);
+
+    double metros = millas * 1852.0;
+    System.out.println("metros son: " + metros);
+
+    /*
+    Ejercicio 8: Escribe un programa que lee dos números y los visualiza en orden ascendente.
+     */
+
+    System.out.println("\nEjercicio 08");
+    sc = new Scanner(System.in);
+
+    System.out.println("Ingresar numeros: ");
+    double Numero1 = sc.nextDouble();
+    System.out.println("Numero 1: " + Numero1);
+    double Numero2 = sc.nextDouble();
+    System.out.println("Numero 2: " + Numero2);
+
+    double menor = Math.min(Numero1, Numero2);
+    double mayor = Math.max(Numero1, Numero2);
+    System.out.println("numeros en orden ascendente: " +  menor + " - " + mayor);
+
+    /*
+    Ejercicio 9: Escribe un programa que lee dos números y nos dice cuál es el mayor o si son iguales.
+     */
+
+    System.out.println("\nEjercicio 09");
+    sc = new Scanner(System.in);
+
+    System.out.println("Ingresar numeros: ");
+    double numero4 = sc.nextDouble();
+    System.out.println("numero1 : " + numero4);
+    double numero5 = sc.nextDouble();
+    System.out.println("numero2: " + numero5);
+
+    System.out.println("mayor: " + Math.max(numero4, numero5));
+    System.out.println("iguales = " + (numero4 == numero5));
+
+
+    /*
+    Ejercicio 10: Escribe un programa que lea tres números distintos y nos diga cuál es el mayor.
+     */
+
+    System.out.println("\nEjercicio 10");
+    sc = new Scanner(System.in);
+
+    System.out.println("Numeros: ");
+    double numero6 = sc.nextDouble();
+    System.out.println("numero 1: " + numero6);
+    double numero7 = sc.nextDouble();
+    System.out.println("numero 2: " + numero7);
+    double numero8 = sc.nextDouble();
+    System.out.println("numero 3: " + numero8);
+
+    double max = Math.max(Math.max(numero6, numero7), numero8);
+    System.out.println("El mayor es: " + max);
+
+    /*
+    Ejercicio 11: Escribe un programa que lee dos números, calcula y muestra el valor de su suma, resta,
+    producto y división. (Ten en cuenta la división por cero)
+     */
+
+    System.out.println("\nEjercicio 11");
+    sc = new Scanner(System.in);
+
+    System.out.println("Escriba los numeros: ");
+    double numero9 = sc.nextDouble();
+    System.out.println("numero 1: " + numero9);
+    double numero10 = sc.nextDouble();
+    System.out.println("numero 2: " + numero10);
+
+    
+
 }
 
