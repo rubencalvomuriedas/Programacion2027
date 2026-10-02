@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class E14 {
     public static void main(String[] args) {
 
@@ -13,6 +15,39 @@ public class E14 {
         Escribir nombre, salario bruto, tasas y salario neto.
          */
 
+        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
+        double tarifaNormal = 25.0;
 
+        System.out.println("Nombre del trabajador: ");
+        String nombre = sc.nextLine();
+
+        System.out.println("Introduce el numero de horas trabajadas: ");
+        double horasTrabajadas = sc.nextDouble();
+
+        double salarioBruto = 0.0;
+        double salarioNeto = 0.0;
+        if(horasTrabajadas >0 && horasTrabajadas <= 35){
+            salarioBruto = tarifaNormal * horasTrabajadas;
+        } else if(horasTrabajadas > 35){
+            salarioBruto = 1.5 * tarifaNormal * (horasTrabajadas-35) + 35 * tarifaNormal;
+        }else{
+            System.out.println("Las horas trabjadas no pueden ser negativas");
+        }
+
+        if(salarioBruto <= 500){
+            salarioNeto = salarioBruto;
+        } else if (salarioBruto > 500&& salarioBruto <= 900) {
+            salarioNeto = 500 + (salarioBruto - 500) * 0.75;
+        } else if (salarioBruto > 900) {
+            salarioNeto = 500 +  (salarioBruto - 500) * 0.75 + (salarioBruto - 900) * 0.55;
+        }
+
+        System.out.println("El nombre del trabajador es: " + nombre);
+        System.out.println("El numero de horas trabajadas es: " +horasTrabajadas);
+        System.out.println("La tarifa por hora es: " + tarifaNormal);
+        System.out.println("La salario bruto es: " + salarioBruto);
+        System.out.println("La salario neto es: " + salarioNeto);
+        System.out.println("Las tasas aplicadas son: " + (salarioBruto - salarioNeto));
     }
 }
