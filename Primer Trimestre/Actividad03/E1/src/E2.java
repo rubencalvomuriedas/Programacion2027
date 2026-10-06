@@ -27,6 +27,60 @@ public class E2 {
             System.out.println("5. Salir");
             opcion = sc.nextLine();
 
-        }
+            switch (opcion){
+                case "1":
+                    sc = new Scanner(System.in);
+                    System.out.println("Introduce el primer valor: ");
+                    num1 = sc.nextDouble();
+                    System.out.println("Introduce el segundo valor: ");
+                    num2 = sc.nextDouble();
+                    System.out.println("La suma de los dos numero es: " + (num1 + num2));
+                    break;
+
+                case "2":
+                    sc = new Scanner(System.in);
+                    System.out.println("Introduce el primero valor: ");
+                    num1 = sc.nextDouble();
+                    System.out.println("Introduce el segundo valor: ");
+                    num2 = sc.nextDouble();
+                    System.out.println("La resta de los numeros es: " +(num1 - num2));
+                    break;
+
+                case "3":
+                    sc = new Scanner(System.in);
+                    System.out.println("Introduce el primer valor: ");
+                    num1 = sc.nextDouble();
+                    System.out.println("Introduce el segundo valor: ");
+                    num2 = sc.nextDouble();
+                    System.out.println("La multiplicacion de los dos numeros es: " + (num1 * num2));
+                    break;
+
+                case "4":
+                    sc = new Scanner(System.in);
+                    System.out.println("Introduce el primer valor: ");
+                    num1 = sc.nextDouble();
+                    System.out.println("Introduce el segundo valor: ");
+                    num2 = sc.nextDouble();
+
+
+                    if (num2 != 0.0){
+                        System.out.println("La division de los numeros es: " + (num1 / num2));
+                    }
+                    else{
+                        System.out.println("No se puede dividir entre 0");
+                    }
+                    break;
+
+                case "5":
+                    System.out.println("Cerrando... ");
+                    break;
+
+                default:
+                    System.out.println("Por favor seleccione las opciones indicadas, imbecil.");
+            }
+
+            
+        }while(!opcion.equals(5));
+
     }
 }

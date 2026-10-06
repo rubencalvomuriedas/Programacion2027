@@ -23,7 +23,7 @@ public class E1 {
             dinero = sc.nextInt();
         }while(dinero % 5 != 0);
 
-        String textoDinero = "Se necesitan \n";
+        String textoDinero = "Se necesitan: \n";
         dineroRestante = dinero;
 
         if(dineroRestante >= 500){
@@ -69,15 +69,7 @@ public class E1 {
         }
 
         System.out.println("El dinero total es: " + dinero);
-        System.out.println("Se necesitan \n" + n500 + " billetes de 500"
-                + "\n" + n200 + " billetes de 200"
-                + "\n" + n100 + " billetes de 100"
-                + "\n" + n50 + " billetes de 50"
-                + "\n" + n20 + " billetes de 20"
-                + "\n" + n10 + " billetes de 10"
-                + "\n" + n5 + " billetes de 5");
 
-        System.out.println("LA OTRA FORMA !!!!");
         System.out.println(textoDinero);
     }
 }
