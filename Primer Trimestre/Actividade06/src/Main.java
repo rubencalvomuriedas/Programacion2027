@@ -128,7 +128,6 @@ void main() {
         estadisticas[i][2] = estadisticas[i][2] / matriz4[i].length;
     }
 
-    //Pintar estadisticas
     for (int i = 0; i < estadisticas.length; i++) {
         for (int j = 0; j < estadisticas[i].length; j++) {
             System.out.print(estadisticas[i][j] + " ");
@@ -137,15 +136,18 @@ void main() {
     }
 
 
-    /**
-     * Ejercicio 5: Necesitamos crear un programa para registrar sueldos de hombres y
-     * mujeres de una empresa y detectar si existe brecha salarial entre ambos. El
-     * programa pedirá por teclado la información de N personas distintas (valor también
-     * introducido por teclado). Para cada persona, pedirá su género (0 para varón y 1 para
-     * mujer) y su sueldo. Esta información debe guardarse en una única matriz. Luego se
-     * mostrará por pantalla el sueldo medio de cada género
-     */
+    /*
+    Ejercicio 5: Necesitamos crear un programa para registrar sueldos de hombres y
+    mujeres de una empresa y detectar si existe brecha salarial entre ambos. El
+    programa pedirá por teclado la información de N personas distintas (valor también
+    introducido por teclado). Para cada persona, pedirá su género (0 para varón y 1 para
+    mujer) y su sueldo. Esta información debe guardarse en una única matriz. Luego se
+    mostrará por pantalla el sueldo medio de cada género
+    */
+
+
     System.out.println("\nEjercicio 5:");
+
     int personas = 0;
     sc = new Scanner(System.in);
 
