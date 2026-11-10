@@ -10,7 +10,9 @@ public class Movimiento {
 
     private static int contadorMoviemiento = 0;
     private DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy  HH:mm:ss");
-    public Movimiento(){}
+
+    public Movimiento(){
+    }
 
     public Movimiento(Tipo tipo, double cantidad){
         this.id = contadorMoviemiento;
